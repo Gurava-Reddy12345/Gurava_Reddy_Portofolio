@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Gurava Reddy — Data Science & ML Engineer. Oracle OCI Certified. B.Tech CSE, LPU.">
+<title>Gurava Reddy · Data Science Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="BG"></canvas>
+<div id="CUR"></div>
+<div id="CUR2"></div>
+
+<!-- ════════════ NAV ════════════ -->
+<nav id="NAV">
+  <a href="#home" class="n-logo">GR/&gt;</a>
+
+  <ul class="n-list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certs">Certs</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button class="n-ham" id="HAM" aria-expanded="false" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="n-mob" id="MOB">
+  <a href="#home"         onclick="closeM()">Home</a>
+  <a href="#about"        onclick="closeM()">About</a>
+  <a href="#skills"       onclick="closeM()">Skills</a>
+  <a href="#training"     onclick="closeM()">Training</a>
+  <a href="#projects"     onclick="closeM()">Projects</a>
+  <a href="#certs"        onclick="closeM()">Certifications</a>
+  <a href="#achievements" onclick="closeM()">Achievements</a>
+  <a href="#education"    onclick="closeM()">Education</a>
+  <a href="#contact"      onclick="closeM()">Contact</a>
+</nav>
+
+<!-- ════════════ HERO ════════════ -->
+<section id="home">
+  <div class="hero-bg-text" aria-hidden="true">GR</div>
+  <div class="hero-inner">
+
+    <!-- LEFT -->
+    <div class="hl">
+      <div class="h-pill rv">
+        <span class="pill-dot" aria-hidden="true"></span>
+        Open to Internship and Full-Time opportunities
+      </div>
+
+      <h1 class="h-name rv d1">
+        Gurava <span class="h-name-or">Reddy</span>
+      </h1>
+
+      <p class="h-tag rv d1">Data Science &amp; ML Engineer</p>
+
+      <p class="h-vp rv d2">
+        <strong>Transforming raw data into intelligent systems</strong> using machine
+        learning and analytics. I build production-grade pipelines, fraud detection
+        systems, and data products that create measurable impact.
+      </p>
+
+      <div class="h-ctas rv d3">
+        <a href="Gurava_Reddy_General_CV.pdf" class="btn btn-s" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="btn btn-p">
+          Hire Me
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="h-social rv d4">
+        <a href="https://github.com/Gurava-Reddy12345" target="_blank" class="soc" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gurava93" target="_blank" class="soc" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/></svg>
+        </a>
+        <a href="mailto:lokireddyguravareddy2@gmail.com" class="soc" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT — PHOTO -->
+    <div class="hr rv d2">
+      <div class="hp-outer">
+        <div class="hp-ring"><div class="hp-ring-in"></div></div>
+        <div class="hp-orbit"><div class="hp-orbit-dot"></div></div>
+        <div class="hp-img" id="PHOTO_WRAP">
+          <img id="PHOTO" src="Photo.jpeg" alt="Gurava Reddy">
+          <span id="PHOTO_FB" style="display:none"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="sh-word">Scroll</div>
+    <div class="sh-line"></div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ ABOUT ════════════ -->
+<section id="about" class="sec">
+  <div class="lbl rv">Who I Am</div>
+  <h2 class="stit rv d1">About <em>Me</em></h2>
+
+  <div class="about-grid">
+    <div class="about-left rv d2">
+      <p class="about-body">
+        I'm a <strong>Computer Science &amp; Engineering</strong> student at Lovely Professional
+        University, Phagwara, specialising in <strong>Data Science and Machine Learning</strong>.
+        I build end-to-end ML systems — from raw data ingestion and feature engineering to
+        model deployment and performance monitoring.<br><br>
+        My work on <strong>financial fraud detection</strong> proves I can handle real-world
+        complexity: imbalanced datasets, recall-precision trade-offs, and scalable pipeline
+        architecture. I communicate results in business language — not just technical jargon.
+      </p>
+      <div class="qs-grid">
+        <div class="qs"><div class="qs-n">4+</div><div class="qs-l">Projects Completed</div></div>
+        <div class="qs"><div class="qs-n">5</div><div class="qs-l">Certifications Earned</div></div>
+        <div class="qs"><div class="qs-n">150+</div><div class="qs-l">LeetCode Problems</div></div>
+        <div class="qs"><div class="qs-n">97.3%</div><div class="qs-l">Score in Class XII</div></div>
+      </div>
+    </div>
+
+    <div class="info-col rv d3">
+      <div class="ic">
+        <div class="ic-icon">🎓</div>
+        <div>
+          <div class="ic-lbl">Degree</div>
+          <div class="ic-val"><strong>B.Tech CSE</strong></div>
+          <div class="ic-sub">Lovely Professional University — Since Aug 2023</div>
+        </div>
+      </div>
+      <div class="ic">
+        <div class="ic-icon">📍</div>
+        <div>
+          <div class="ic-lbl">Location</div>
+          <div class="ic-val">Phagwara, Punjab, India</div>
+        </div>
+      </div>
+      <div class="ic seek">
+        <div class="ic-icon">💼</div>
+        <div>
+          <div class="ic-lbl">Seeking</div>
+          <div class="ic-val">Data Science, ML &amp; Analytical Roles</div>
+        </div>
+      </div>
+      <div class="ic leet">
+        <div class="ic-icon">⚡</div>
+        <div>
+          <div class="ic-lbl">Competitive Coding</div>
+          <div class="ic-val">150+ LeetCode · 5★ HackerRank C++</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ SKILLS ════════════ -->
+<section id="skills" class="sec">
+  <div class="lbl rv">Expertise</div>
+  <h2 class="stit rv d1">Technical <em>Skills</em></h2>
+
+  <div class="sk-leg rv d1">
+    <div class="sl"><div class="sld e"></div>Master</div>
+    <div class="sl"><div class="sld a"></div>Expert</div>
+    <div class="sl"><div class="sld p"></div>Proficient</div>
+    <div class="sl"><div class="sld f"></div>Familiar</div>
+  </div>
+
+  <div class="sk-grid rv d2">
+    <div class="sk-card">
+      <div class="sk-hd"><div class="sk-ico">💻</div><div class="sk-nm">Programming &amp; CS Fundamentals</div></div>
+      <div class="chips">
+        <span class="chip a">Python</span><span class="chip a">SQL</span><span class="chip a">C++</span>
+        <span class="chip a">C</span><span class="chip b">Java</span><span class="chip m">DSA</span>
+        <span class="chip a">Operating System</span><span class="chip m">DBMS</span>
+        <span class="chip a">Computer Networking</span><span class="chip b">Computer Architecture</span>
+      </div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-hd"><div class="sk-ico">🧠</div><div class="sk-nm">Machine Learning</div></div>
+      <div class="chips">
+        <span class="chip a">Regression</span><span class="chip a">Classification</span>
+        <span class="chip a">Clustering</span><span class="chip a">PCA</span>
+        <span class="chip a">Neural Networks</span><span class="chip a">Model Evaluation</span>
+        <span class="chip a">Ensemble Methods</span><span class="chip a">Feature Engineering</span>
+      </div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-hd"><div class="sk-ico">📦</div><div class="sk-nm">Libraries &amp; Tools</div></div>
+      <div class="chips">
+        <span class="chip a">Pandas</span><span class="chip a">NumPy</span>
+        <span class="chip a">Matplotlib</span><span class="chip m">Seaborn</span>
+        <span class="chip m">Streamlit</span><span class="chip m">Power BI</span>
+        <span class="chip m">Git / GitHub</span>
+      </div>
+    </div>
+    <div class="sk-card">
+      <div class="sk-hd"><div class="sk-ico">🤝</div><div class="sk-nm">Soft Skills</div></div>
+      <div class="chips">
+        <span class="chip a">Problem Solving</span><span class="chip a">Analytical Thinking</span>
+        <span class="chip a">Team Collaboration</span><span class="chip m">Communication</span>
+        <span class="chip m">Time Management</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ TRAINING ════════════ -->
+<section id="training" class="sec">
+  <div class="lbl rv">Experience</div>
+  <h2 class="stit rv d1">Training &amp; <em>Internships</em></h2>
+
+  <div class="exp-card rv d2">
+    <div class="exp-top">
+      <div>
+        <div class="exp-co">Cipher Schools</div>
+        <div class="exp-role">Data Science with Machine Learning — Trainee</div>
+      </div>
+      <div class="exp-dt">Jun 2025 – Jul 2025</div>
+    </div>
+    <p class="exp-p">
+      Completed an intensive industry-focused Data Science and Machine Learning training
+      programme, gaining end-to-end experience across the full ML lifecycle. Conducted structured
+      <strong>Exploratory Data Analysis (EDA)</strong> and statistical profiling using Pandas and NumPy,
+      implementing optimised preprocessing workflows that reduced pipeline preparation time by
+      <strong>20%</strong>. Independently designed, trained, and evaluated six supervised and
+      unsupervised learning models — including Linear Regression, K-Nearest Neighbours, Support
+      Vector Machines, Decision Trees, K-Means Clustering, and Ensemble Methods — applying
+      <strong>cross-validation and hyperparameter tuning</strong> via Scikit-learn. Through systematic
+      feature engineering, correlation analysis, and iterative model refinement, achieved up to
+      <strong>25% improvement in model performance</strong> on held-out validation sets. Gained
+      practical proficiency in translating ambiguous business requirements into measurable ML
+      objectives, and in writing production-oriented, maintainable Python code.
+    </p>
+    <div class="exp-slbl">Skills Applied</div>
+    <div class="exp-chips">
+      <span class="ec">Python</span><span class="ec">Pandas</span><span class="ec">NumPy</span>
+      <span class="ec">Scikit-learn</span><span class="ec">Matplotlib</span><span class="ec">Seaborn</span>
+      <span class="ec">EDA</span><span class="ec">Feature Engineering</span>
+      <span class="ec">Cross-Validation</span><span class="ec">Hyperparameter Tuning</span>
+      <span class="ec">SVM</span><span class="ec">Decision Trees</span>
+      <span class="ec">K-Means</span><span class="ec">Ensemble Methods</span>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ PROJECTS ════════════ -->
+<section id="projects" class="sec">
+  <div class="lbl rv">Proof of Work</div>
+  <h2 class="stit rv d1">Things I've <em>Built</em></h2>
+
+  <div class="proj-grid">
+    <article class="proj-card rv d2">
+      <div class="proj-thumb">
+        <div class="proj-thumb-bg" style="background:linear-gradient(135deg,#18181C,rgba(255,92,0,.07))"></div>
+        <svg class="proj-thumb-icon" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="1" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        <div class="proj-tag">Machine Learning · Fintech</div>
+        <a href="https://github.com/Gurava-Reddy12345/Real_Time_Financial_Fraud_Detection" target="_blank" class="proj-github" aria-label="GitHub repository">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <div class="proj-num" aria-hidden="true">01</div>
+      </div>
+      <div class="proj-body">
+        <h3 class="proj-title">Real-Time Financial Fraud Detection</h3>
+        <div class="cs-row">
+          <div class="cs-lbl">Problem</div>
+          <p class="cs-txt">Financial fraud costs $32B+ annually. Standard ML classifiers fail on severely imbalanced transaction data — genuine fraud represents &lt;0.1% of transactions, making naive models worthless in production.</p>
+        </div>
+        <div class="cs-row">
+          <div class="cs-lbl">Solution</div>
+          <p class="cs-txt">Built an end-to-end ML pipeline applying SMOTE to correct class imbalance, implemented Logistic Regression, Random Forest, and XGBoost with ROC-AUC and recall-optimised evaluation, structured for modular production deployment.</p>
+        </div>
+        <div class="cs-lbl">Impact</div>
+        <div class="impact-row">
+          <span class="imp">↑ 25% F1-score vs baseline</span>
+          <span class="imp">ROC-AUC optimised</span>
+          <span class="imp">Class imbalance resolved</span>
+        </div>
+        <div class="tech-row">
+          <span class="tp">Python</span><span class="tp">Pandas</span><span class="tp">Scikit-Learn</span>
+          <span class="tp">XGBoost</span><span class="tp">SMOTE</span><span class="tp">EDA</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="proj-card rv d3">
+      <div class="proj-thumb">
+        <div class="proj-thumb-bg" style="background:linear-gradient(135deg,#18181C,rgba(255,140,64,.06))"></div>
+        <svg class="proj-thumb-icon" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="#FF5C00" stroke-width="1" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        <div class="proj-tag">Systems · OS Simulation</div>
+        <a href="https://github.com/Gurava-Reddy12345/process-visualization-tool" target="_blank" class="proj-github" aria-label="GitHub repository">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <div class="proj-num" aria-hidden="true">02</div>
+      </div>
+      <div class="proj-body">
+        <h3 class="proj-title">Process Visualization Tool</h3>
+        <div class="cs-row">
+          <div class="cs-lbl">Problem</div>
+          <p class="cs-txt">CPU scheduling algorithms are a cornerstone of OS theory yet remain abstract in textbooks. Students and engineers need to see them execute in real time to build genuine intuition.</p>
+        </div>
+        <div class="cs-row">
+          <div class="cs-lbl">Solution</div>
+          <p class="cs-txt">Built a Streamlit interactive simulator implementing FCFS, SJF (Preemptive &amp; Non-Preemptive), Priority, and Round Robin with real-time Gantt charts, waiting time metrics, and live CPU monitoring via psutil.</p>
+        </div>
+        <div class="cs-lbl">Impact</div>
+        <div class="impact-row">
+          <span class="imp">4 algorithms live</span>
+          <span class="imp">Real-time Gantt charts</span>
+          <span class="imp">Live CPU monitoring</span>
+        </div>
+        <div class="tech-row">
+          <span class="tp">Python</span><span class="tp">Streamlit</span>
+          <span class="tp">psutil</span><span class="tp">Matplotlib</span><span class="tp">Pandas</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ CERTIFICATIONS ════════════ -->
+<section id="certs" class="sec">
+  <div class="lbl rv">Credentials</div>
+  <h2 class="stit rv d1">Certif<em>ications</em></h2>
+
+  <div class="cert-grid">
+    <div class="cert-card rv d1">
+      <div class="cert-ico" style="background:rgba(220,38,38,.1);font-family:monospace;font-size:11px;font-weight:800;color:#ef4444">GfG</div>
+      <div class="cert-nm">SQL — Database Management &amp; Querying</div>
+      <div class="cert-ds">Relational databases, complex queries, joins, indexing, and optimisation using industry-standard practices.</div>
+      <div class="cert-meta"><span class="cert-by">GeeksForGeeks</span><span class="cert-yr">Nov 2025</span></div>
+      <a href="https://www.geeksforgeeks.org/certificate/e8c283161112566595ab1d1d7754264c" class="cert-btn" target="_blank" rel="noopener">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        View Credential
+      </a>
+    </div>
+
+    <div class="cert-card rv d2">
+      <div class="cert-ico" style="background:rgba(66,133,244,.1)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+      </div>
+      <div class="cert-nm">Google Data Analytics Professional</div>
+      <div class="cert-ds">Data cleaning, SQL, Tableau, and the full analytics workflow from questions to conclusions.</div>
+      <div class="cert-meta"><span class="cert-by">Google</span><span class="cert-yr">Nov 2025</span></div>
+      <a href="https://skillshop.credential.net/8c45194b-f0eb-478d-aaaf-164a3ea88536#acc.xy4jBOp6" class="cert-btn" target="_blank" rel="noopener">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        View Credential
+      </a>
+    </div>
+
+    <div class="cert-card rv d3">
+      <div class="cert-ico" style="background:var(--org);font-size:1.1rem">☁️</div>
+      <div class="cert-nm">OCI 2025 — Generative AI Professional</div>
+      <div class="cert-ds">LLMs, prompt engineering, RAG, and Generative AI service deployment on Oracle Cloud.</div>
+      <div class="cert-meta"><span class="cert-by">Oracle</span><span class="cert-yr">Oct 2025</span></div>
+      <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=F52C942FC2476B57C29D0D628D194B1AFAC577200CF6AC81F652ADD5D8555DFA" class="cert-btn" target="_blank" rel="noopener">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        View Credential
+      </a>
+    </div>
+
+    <div class="cert-card rv d4">
+      <div class="cert-ico" style="background:var(--org);font-size:1.1rem">☁️</div>
+      <div class="cert-nm">OCI 2025 — Certified Data Science Professional</div>
+      <div class="cert-ds">ML pipelines, model evaluation, feature engineering, and end-to-end DS on Oracle Cloud.</div>
+      <div class="cert-meta"><span class="cert-by">Oracle</span><span class="cert-yr">Sep 2025</span></div>
+      <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E48E4E62797AB184F659B2F1F542C220B3B6D64CA4DC62D82699B254F4F74466" class="cert-btn" target="_blank" rel="noopener">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        View Credential
+      </a>
+    </div>
+
+    <div class="cert-card rv d1">
+      <div class="cert-ico" style="background:rgba(34,197,94,.1);font-size:1.1rem">🏛️</div>
+      <div class="cert-nm">Cloud Computing</div>
+      <div class="cert-ds">Cloud architecture, IaaS/PaaS/SaaS, virtualisation, security, and distributed computing via NPTEL.</div>
+      <div class="cert-meta"><span class="cert-by">NPTEL — IIT</span><span class="cert-yr">Mar 2024</span></div>
+      <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs11/Course/NPTEL25CS11S143730165204240388.pdf" class="cert-btn" target="_blank" rel="noopener">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        View Credential
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ ACHIEVEMENTS ════════════ -->
+<section id="achievements" class="sec">
+  <div class="lbl rv">Recognition</div>
+  <h2 class="stit rv d1">Achieve<em>ments</em></h2>
+  <div class="ach-grid">
+    <div class="achievement-card rv d1">
+      <div class="ach-icon">★</div>
+      <div class="ach-body">
+        <h4>150+ LeetCode Problems</h4>
+        <p>Solved 150+ DSA problems covering arrays, trees, graphs, DP, and backtracking — systematic algorithmic thinking at a competitive level.</p>
+        <span class="ach-date">Mar 2026</span>
+      </div>
+    </div>
+    <div class="achievement-card rv d2">
+      <div class="ach-icon">★</div>
+      <div class="ach-body">
+        <h4>HackerRank 5-Star Rating</h4>
+        <p>Earned 5-Star Gold badges in C++ and Problem Solving on HackerRank — top global tier, consistent performance across algorithmic challenges.</p>
+        <span class="ach-date">Feb 2026</span>
+      </div>
+    </div>
+    <div class="achievement-card rv d3">
+      <div class="ach-icon">★</div>
+      <div class="ach-body">
+        <h4>8.15 CGPA — Academic Excellence</h4>
+        <p>Sustained a strong 8.15 CGPA across all semesters of B.Tech CSE at LPU while completing certifications, building projects, and competing.</p>
+        <span class="ach-date">Ongoing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ EDUCATION ════════════ -->
+<section id="education" class="sec">
+  <div class="lbl rv">Academic Background</div>
+  <h2 class="stit rv d1">Educ<em>ation</em></h2>
+  <div class="edu-list">
+    <div class="edu-card rv d2">
+      <div class="edu-ico">🎓</div>
+      <div>
+        <div class="edu-per">Aug 2023 – Present</div>
+        <div class="edu-deg">B.Tech — Computer Science &amp; Engineering</div>
+        <div class="edu-inst">Lovely Professional University, Phagwara, Punjab</div>
+        <div class="edu-score">✦ CGPA: 8.15 / 10.0</div>
+      </div>
+    </div>
+    <div class="edu-card rv d3">
+      <div class="edu-ico">📚</div>
+      <div>
+        <div class="edu-per">May 2021 – May 2023</div>
+        <div class="edu-deg">Intermediate — 12th Class (MPC)</div>
+        <div class="edu-inst">VIBM Junior College, Vijayawada, Andhra Pradesh</div>
+        <div class="edu-score">✦ Percentage: 97.3%</div>
+      </div>
+    </div>
+    <div class="edu-card rv d4">
+      <div class="edu-ico">🏫</div>
+      <div>
+        <div class="edu-per">June 2020 – April 2021</div>
+        <div class="edu-deg">10th Class (SSC)</div>
+        <div class="edu-inst">S.S.V.N High School, East Gangavaram, Andhra Pradesh</div>
+        <div class="edu-score">✦ Percentage: 100%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-line"></div>
+
+<!-- ════════════ CONTACT ════════════ -->
+<section id="contact" class="sec">
+  <div class="lbl rv">Get in Touch</div>
+  <h2 class="stit rv d1">Let's <em>Connect</em></h2>
+
+  <div class="contact-wrap">
+    <div class="rv d2">
+      <div class="c-intro">
+        <p>I'm actively seeking <strong>Open to Internship and Full-Time opportunities</strong> in Data Science, ML Engineering, and Analytic Role's. If you're a recruiter looking for a result-driven engineer — let's talk.</p>
+      </div>
+      <div class="c-links">
+        <a href="mailto:lokireddyguravareddy2@gmail.com" class="c-link">
+          <div class="c-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF5C00"><path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+          lokireddyguravareddy2@gmail.com
+        </a>
+        <a href="tel:+917601070491" class="c-link">
+          <div class="c-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FF5C00"><path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.18 2.2z"/></svg></div>
+          +91 7601070491
+        </a>
+        <a href="https://www.linkedin.com/in/gurava93" target="_blank" rel="noopener" class="c-link">
+          <div class="c-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"/></svg></div>
+          linkedin.com/in/gurava93
+        </a>
+        <a href="https://github.com/Gurava-Reddy12345" target="_blank" rel="noopener" class="c-link">
+          <div class="c-ico"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></div>
+          github.com/Gurava-Reddy12345
+        </a>
+      </div>
+    </div>
+
+    <div class="rv d3">
+      <form class="c-form" onsubmit="handleForm(event)" novalidate>
+        <div class="f-row">
+          <div class="fg"><label for="FN">Full Name</label><input type="text" id="FN" placeholder="Your name" required autocomplete="name"></div>
+          <div class="fg"><label for="FE">Email</label><input type="email" id="FE" placeholder="you@company.com" required autocomplete="email"></div>
+        </div>
+        <div class="fg"><label for="FP">Phone (optional)</label><input type="tel" id="FP" placeholder="+91 XXXXXXXXXX" autocomplete="tel"></div>
+        <div class="fg"><label for="FM">Message</label><textarea id="FM" rows="4" placeholder="Tell me about the opportunity…" required></textarea></div>
+        <button type="submit" class="btn btn-p" style="cursor:none;width:fit-content">
+          Send Message
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="footer-wrap">
+  <footer>
+    <span class="ft">© 2026 L.K. Gurava Reddy · Data Science &amp; ML Engineer</span>
+    <div class="fls">
+      <a href="https://github.com/Gurava-Reddy12345" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/gurava93" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:lokireddyguravareddy2@gmail.com">Email</a>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
