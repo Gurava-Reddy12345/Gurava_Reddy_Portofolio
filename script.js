@@ -202,3 +202,28 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     el.style.transition = 'none';
   });
 }
+const texts = [
+  "Data Science & ML Engineer",
+  "Python & Analytics Specialist",
+  "Oracle OCI Certified Professional",
+  "Open to Data Science, Machine Learning & AI Opportunities"
+];
+
+let index = 0;
+const textElement = document.getElementById("dynamic-text");
+
+function changeText() {
+  textElement.style.opacity = 0;
+
+  setTimeout(() => {
+    textElement.textContent = texts[index];
+    textElement.style.opacity = 1;
+    index = (index + 1) % texts.length;
+  }, 300);
+}
+
+// initial text
+changeText();
+
+// change every 2 seconds
+setInterval(changeText, 2000);

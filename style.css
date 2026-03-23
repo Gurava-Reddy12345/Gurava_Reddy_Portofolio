@@ -164,7 +164,7 @@ nav.sc { border-color: var(--b2); box-shadow: 0 1px 0 rgba(255,92,0,.05), var(--
   letter-spacing: .08em; text-transform: uppercase;
   background: #c36a10; color: #fff;
   padding: 9px 20px; border-radius: var(--r);
-  border: none; cursor: none;
+  border: none; cursor: pointer;
   transition: background .2s;
   box-shadow: none; flex-shrink: 0;
 }
@@ -294,7 +294,13 @@ nav.sc { border-color: var(--b2); box-shadow: 0 1px 0 rgba(255,92,0,.05), var(--
   transform: translateY(-3px); box-shadow: 0 8px 24px rgba(255,92,0,.4);
 }
 .soc:active { transform: translateY(0); }
+#dynamic-text {
+  display: inline-block;
+  font-size: 1rem;
+  color: var(--t2);
 
+  transition: opacity 0.3s ease;
+}
 /* CTAs */
 .h-ctas { display: flex; gap: .9rem; flex-wrap: wrap; margin-bottom: 2rem; }
 .btn {
@@ -302,7 +308,7 @@ nav.sc { border-color: var(--b2); box-shadow: 0 1px 0 rgba(255,92,0,.05), var(--
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: .9rem; font-weight: 700; letter-spacing: -.01em;
   padding: 13px 26px; border-radius: var(--r2);
-  border: none; cursor: none;
+  border: none; cursor: pointer;
   transition: all .22s cubic-bezier(.4,0,.2,1);
   position: relative; overflow: hidden;
 }
